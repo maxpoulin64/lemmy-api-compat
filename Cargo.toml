@@ -1,0 +1,12 @@
+[package]
+name = "lemmy-api-compat"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper = { version = "0.14.27", features = ["client", "http1", "http2", "runtime", "server", "stream", "deprecated", "nightly"] }
+json = "0.12.4"
+tokio = { version = "1.32.0", features = ["bytes", "rt", "macros", "net"] }
+url = "2.4.1"
